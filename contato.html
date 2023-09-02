@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CvCarlaMinozzo</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #F5DEB3;
+        }
+
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: right;
+            /*  menu a direita */
+        }
+
+        .imagem_carla {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #F5DEB3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            background-color: #FFF8DC;
+            width: 1000px;
+        }
+
+        /*  formatação do formulário */
+        input[type=text],
+        input[type=email],
+        textarea {
+            width: 100%;
+            padding-left: 20px;
+            line-height: 20px;
+            height: 30px;
+            border-radius: 15px;
+            border: 1px solid #F5DEB3;
+            outline-color: #DEB887;
+        }
+
+        textarea {
+            line-height: 20px;
+            padding: 10px;
+            height: 90px;
+            resize: none;
+        }
+
+        button {
+            display: block;
+            background-color: #F5DEB3;
+            height: 35px;
+            border: none;
+            /*  mudar o cursor quandp clica em enviar */
+            cursor: pointer;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            color: rgb#DEB887;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: solid #DEB887 2px;
+            font-family: sans-serif;
+            /*  mudar a fonte do link */
+        }
+
+        li {
+            float: left;
+            padding: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            /*  ficar sublinhado quando clicar*/
+            background-color: #DEB887;
+            color: white;
+            /* mudar a cor quando clicar*/
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #F5DEB3;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="container menu">
+        <br>
+        <ul> <!--criar a lista com links-->
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <br>
+
+    </header>
+
+    <div class="container">
+        <aside class="imagem_carla">
+            <img src="imagemCarla.jpg" style="width: 100%">
+
+            <div class="dadospessoais">
+                <p><strong>Carla Minozzo</strong></p>
+                <p><strong>Telefone</strong> (51) 994535779</p>
+                <p><strong>Email</strong> carla.minozzo@gmail.com</p>
+                <p><strong>Endereço</strong> Porto Alegre, RS</p>
+            </div>
+
+        </aside>
+        <section class="principal ">
+            <br>
+            <br>
+            <h1>
+                Contato
+            </h1>
+
+            <table>
+                <tr>
+                    <th><label for="nome">Nome:</label></th>
+                <tr>
+                    <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome"></td>
+                    <!--msg que aperece dentro da caixa-->
+                </tr>
+                <tr>
+                    <th><label for="email">E-Mail:</label></th>
+                </tr>
+                <td><input type="email" id="email" name="email" placeholder="Digite seu e-mail"></td>
+                <!--msg que aperece dentro da caixa-->
+                <tr>
+                <tr>
+                    <th><label for="mensagem">Digite sua mensagem:</label></th>
+                <tr>
+                    <td><textarea id="msg" name="msg" placeholder="Digite sua mensagem" cols="50" rows="6"></textarea>
+                    </td>
+                <tr>
+                <tr>
+                    <td><button>Enviar</button></td>
+            </table>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <footer class="container"> <!--criei espaços para o rodapé ficar colorido-->
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+    </footer>
+    
+    </div>
+
+</body>
+
+</html>
