@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CvCarlaMinozzo</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #F5DEB3;
+        }
+
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: right;
+            /*  menu a direita */
+        }
+
+        .imagem_carla {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #F5DEB3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            background-color: #FFF8DC;
+            width: 1000px;
+        }
+
+        ul {
+            list-style-type: none;
+            color: rgb#DEB887;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: solid #DEB887 2px;
+            font-family: sans-serif;
+            /*  mudar a fonte do link */
+        }
+
+        li {
+            float: left;
+            padding: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            /*  ficar sublinhado quando clicar*/
+            background-color: #DEB887;
+            color: white;
+            /* mudar a cor quando clicar*/
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #F5DEB3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="container menu">
+        <br>
+        <ul> <!--criar a lista com links-->
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <br>
+    </header>
+
+    <div class="container">
+        <aside class="imagem_carla">
+            <img src="imagemCarla.jpg" style="width: 100%">
+
+            <div class="dadospessoais">
+                <p><strong>Carla Minozzo</strong></p>
+                <p><strong>Telefone</strong> (51) 994535779</p>
+                <p><strong>Email</strong> carla.minozzo@gmail.com</p>
+                <p><strong>Endereço</strong> Porto Alegre, RS</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <br>
+            <br>
+            <h1>
+                Sobre mim
+            </h1>
+            <br>
+            <p> Eu sou professora. Lecionei durante 20 anos,sou alfabetizadora e graduada em matemática.
+                <br>Eu dava aula de matemática para alunos de escola pública e no turno inverso eu era
+                alfabetizadora.<br>Mudei para os Estados Unidos em 2020 e como é muito complicado exercer
+                a minha profissão<br> aqui resolvi recomeçar e comecei a cursar Ciências de dados. Eu gosto de viajar,
+                conhecer novos lugares e culturas.<br>
+                Gosto de ir em shows e caminhar por aí conhecendo novos lugares.
+            </p>
+        </section>
+
+    </div>
+
+    <footer class="container"> <!--criei espaços para o rodapé ficar colorido-->
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
